@@ -1,0 +1,19 @@
+{
+  "name": "tkm-dp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "_site/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaNKaR/rankar.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaNKaR/rankar.github.io/issues"
+  },
+  "homepage": "https://github.com/RaNKaR/rankar.github.io#readme"
+}
