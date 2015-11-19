@@ -4,7 +4,7 @@
   "description": "Hello",
   "main": "_site/index.html",
   "scripts": {
-    "test": "clear; ./node_modules/karma/bin/karma start my.conf.js"
+    "test": "./node_modules/karma/bin/karma start my.conf.js"
   },
   "repository": {
     "type": "git",
