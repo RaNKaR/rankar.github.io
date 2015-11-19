@@ -33,11 +33,16 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['tape'], //['progress'],
+    reporters: ['mocha'], //['tape'], //['progress'],
 
+    plugins: [
+      'karma-phantomjs-launcher',
+      'karma-jasmine',
+      'karma-mocha-reporter'
+    ],
 
     // web server port
-    port: 6667,
+    port: 9876,
 
 
     // enable / disable colors in the output (reporters and logs)
