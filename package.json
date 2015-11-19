@@ -1,7 +1,7 @@
 {
   "name": "tkm-dp",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hello",
   "main": "_site/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/RaNKaR/rankar.github.io/issues"
   },
-  "homepage": "https://github.com/RaNKaR/rankar.github.io#readme"
+  "homepage": "https://github.com/RaNKaR/rankar.github.io#readme",
+  "devDependencies": {
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.15",
+    "karma-chrome-launcher": "^0.2.1",
+    "karma-jasmine": "^0.3.6"
+  }
 }
