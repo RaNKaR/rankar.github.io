@@ -3,7 +3,7 @@ describe("A suite", function() {
         expect(true).toBe(true);
     });
     it("contains spec with an not expectation", function() {
-        expect(true).toBe(false);
+        expect(true).toBe(true);
     });
 });
 
@@ -12,6 +12,6 @@ describe("Something new", function() {
         expect(true).toBe(true);
     });
     it("contains not expectation", function() {
-        expect(flase).toBe(false);
+        expect(true).toBe(true);
     });
 });
