@@ -8,6 +8,7 @@ rvm:
 
 env:
   - DISPLAY=:99.0
+  
 before_install:
   - sh -e /etc/init.d/xvfb start
   - npm install selenium-webdriver
@@ -17,4 +18,4 @@ before_install:
   
 install: gem install html-proofer
 script: 
-  - htmlproof ./_site
+  - htmlproof ./_site --verbose true
