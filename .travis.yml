@@ -14,4 +14,6 @@ before_install:
   
   
 install: gem install jekyll html-proofer
-script: jekyll build && htmlproof ./_site
+script: 
+    jekyll build
+    htmlproof ./_site
