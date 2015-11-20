@@ -20,4 +20,4 @@ before_install:
   
 install: gem install html-proofer
 script: 
-  - htmlproof ./_site/about --verbose --disable-external
+  - htmlproof ./_site --verbose --disable-external --file-ignore './_site/node_modules/*'
