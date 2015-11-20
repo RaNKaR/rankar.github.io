@@ -11,9 +11,9 @@ env:
 before_install:
   - sh -e /etc/init.d/xvfb start
   - npm install selenium-webdriver
+  - jekyll build
   
   
 install: gem install jekyll html-proofer
 script: 
-    jekyll build
-    htmlproof ./_site --verbose:true --check_html:true
+  - htmlproof ./_site --verbose:true --check_html:true
