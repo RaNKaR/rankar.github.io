@@ -2,25 +2,25 @@ language: node_js
 node_js:
   - "4.1"
 
-language: ruby
-rvm:
-  - "2.1"
-
 env:
-#  - DISPLAY=:99.0
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
-  
-before_install:
-#  - sh -e /etc/init.d/xvfb start
-#  - npm install selenium-webdriver
-  - npm install --save-dev frisby
-  - npm install jasmine-node
-  - gem install jekyll
-  - jekyll build
-  
-  
-install: gem install html-proofer
-script: 
+
+script:
+  - ./node_modules/karma/bin/karma start my.conf.js
   - htmlproof ./_site --verbose --href-ignore "#" --disable-external --file-ignore './_site/node_modules/*'
-  - jasmine-node spec/ --junitreport --verbose
+  - galen check galen-test/home.gspec --url http://rankar.github.io/ --size 1024x768 --htmlreport galen-test/reports -Dphantomjs.binary.path=/usr/local/phantomjs/bin/phantomjs
+
+cache:
+  directories:
+    - node_modules
+    - bundler
+
+notifications:
+    email: false
+
+before_install:
+  - rvm install 2.1.5
+  - gem install jekyll
+  - gem install html-proofer
+  - npm install -g galenframework-cli
