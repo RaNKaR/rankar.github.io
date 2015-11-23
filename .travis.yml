@@ -7,7 +7,7 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
 script:
-  - galen check galen-test/home.gspec --url http://localhost:4000/ --size 1024x768 --htmlreport galen-test/reports
+  - galen check galen-test/home.gspec --url http://rankar.github.io/ --size 1024x768 --htmlreport galen-test/reports
   - htmlproof ./_site --verbose --href-ignore "#" --disable-external --file-ignore './_site/node_modules/*'
   - ./node_modules/karma/bin/karma start my.conf.js
 
