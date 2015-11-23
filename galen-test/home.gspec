@@ -1,0 +1,6 @@
+@objects
+    heading     .page-heading
+
+= Header =
+    heading:
+        text is "Posts"
