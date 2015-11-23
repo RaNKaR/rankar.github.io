@@ -11,10 +11,10 @@ script:
   - htmlproof ./_site --verbose --href-ignore "#" --disable-external --file-ignore './_site/node_modules/*'
   - ./node_modules/karma/bin/karma start my.conf.js
 
-#cache:
-#  directories:
-#    - node_modules
-#    - bundler
+cache:
+  directories:
+    - node_modules
+    - bundler
 
 notifications:
     email: false
