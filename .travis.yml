@@ -15,10 +15,15 @@ script:
   - htmlproof ./_site --verbose --href-ignore "#" --disable-external --file-ignore './_site/node_modules/*'
   - ./node_modules/karma/bin/karma start my.conf.js
 
-install: false
+cache:
+  directories:
+    - node_modules
+    - bundler
+
+notifications:
+    email: false
 
 before_install:
   - gem install jekyll
   - gem install html-proofer
   - npm install -g galenframework-cli
-  - npm install
