@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/RaNKaR/rankar.github.io#readme",
   "devDependencies": {
+    "frisby": "^0.8.5",
     "jasmine-core": "^2.3.4",
     "karma": "^0.13.15",
     "karma-chrome-launcher": "^0.2.1",
