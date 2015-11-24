@@ -4,7 +4,7 @@
   "description": "Hello",
   "main": "_site/index.html",
   "scripts": {
-    "test": ""
+    "test": "echo Success ; exit 0"
   },
   "repository": {
     "type": "git",

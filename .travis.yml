@@ -22,6 +22,8 @@ after_script:
 script:
   - rake travis:deploy
 
+after_success:
+  - rake travis:deploy
 cache:
   directories:
     - node_modules
