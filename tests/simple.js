@@ -1,30 +1,3 @@
-describe("A suite", function() {
-    it("contains spec with an expectation", function() {
-        expect(true).toBe(true);
-    });
-    it("contains spec with an not expectation", function() {
-        expect(true).toBe(true);
-    });
-});
-
-describe("Something new", function() {
-    it("contains spec with an expectation", function() {
-        expect(true).toBe(true);
-    });
-    it("contains not expectation", function() {
-        expect(true).toBe(true);
-    });
-
-    describe("Something new", function() {
-        it("contains spec with an expectation", function() {
-            expect(true).toBe(true);
-        });
-        it("contains not expectation", function() {
-            expect(true).toBe(true);
-        });
-    });
-});
-
 describe("A spec", function() {
     var foo;
 
@@ -60,15 +33,3 @@ describe("A spec", function() {
     });
 });
 
-xdescribe("A spec", function() {
-    var foo;
-
-    beforeEach(function() {
-        foo = 0;
-        foo += 1;
-    });
-
-    it("is just a function, so it can contain any code", function() {
-        expect(foo).toEqual(1);
-    });
-});

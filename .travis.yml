@@ -17,7 +17,7 @@ cache:
     - bundler
 
 notifications:
-    email: false
+  email: false
 
 before_install:
   - rvm install 2.1.5
