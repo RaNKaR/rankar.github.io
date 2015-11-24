@@ -18,7 +18,7 @@ branches:
     - dev
 
   
-#sudo: true
+sudo: true
 
 after_script:
   - rake travis:deploy --trace --verbose  
