@@ -27,6 +27,7 @@ namespace 'travis' do
       puts "Skipping deployment from #{ENV['TRAVIS_BRANCH']}"
       if if ENV['TRAVIS_PULL_REQUEST'] != "false"
           puts "This brach is pull request."
+      end
       next
     end
       
