@@ -14,6 +14,10 @@ namespace 'travis' do
   desc 'Publish site to GitHub Pages from Travis'
   task :deploy do
     
+    puts "TRAVIS_BRANCH #{ENV['TRAVIS_BRANCH']}"  
+    puts "TRAVIS_TEST_RESULT #{ENV['TRAVIS_TEST_RESULT']}"
+    puts "TRAVIS_PULL_REQUEST #{ENV['TRAVIS_PULL_REQUEST']}"
+    
     if ENV['TRAVIS_TEST_RESULT'].to_i != 0
       puts "Skipping deployment due to test failure"
       next
