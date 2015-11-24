@@ -23,7 +23,7 @@ script:
   - rake travis:deploy
 
 after_success:
-  - rake travis:deploy
+  - rake travis:deploy --trace --verbose
 cache:
   directories:
     - node_modules
