@@ -13,9 +13,14 @@ node_js:
   
   
 sudo: true
+
 after_script:
   - sudo chmod +x ./travis.sh
   - ./travis.sh
+  
+
+script:
+  - rake travis:deploy
 
 cache:
   directories:
