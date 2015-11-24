@@ -381,22 +381,20 @@ namespace 'travis' do
 
   desc 'Publish site to GitHub Pages from Travis'
   task :deploy do
-    puts 'TRAVIS_TEST_RESULT'
-    puts ENV['TRAVIS_TEST_RESULT'].to_s
+    puts "vars TRAVIS_BRANCH #{ENV['TRAVIS_BRANCH']}    TRAVIS_TEST_RESULT  #{ENV['TRAVIS_TEST_RESULT']}  - #{ENV['GH_TOKEN']}"
     #if ENV['TRAVIS_TEST_RESULT'].to_i != 0
       #puts "Skipping deployment due to test failure"
       #next
     #end
       
-    puts 'TRAVIS_BRANCH'
-    puts= ENV['TRAVIS_BRANCH'].to_s
+    
+    
     #if ENV['TRAVIS_PULL_REQUEST'] == "true" or ENV['TRAVIS_BRANCH'] != SOURCE_BRANCH
       #puts "Skipping deployment from #{ENV['TRAVIS_BRANCH']}"
       #next
     #end
       
-    puts "sha"  
-    puts ENV['GH_TOKEN'].to_s
+    
     #repo = %x(git config remote.origin.url).gsub(/^git:/, 'https:')
     #system "git remote set-url --push origin #{repo}"
     #system 'git config credential.helper "store --file=.git/credentials"'
